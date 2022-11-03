@@ -8,6 +8,9 @@ box-sizing: border-box;
     display: flex;
 }
 
+
+/* HEADER */
+
 header {
     background-color: #076ac5;
     width: 100%;
@@ -31,3 +34,143 @@ div.h1-left {
 .h1-right li {
     display: inline;
 }
+
+
+/* TOP-CARDS-CONTAINER */
+
+section.top-cards-container {
+    background-color: green;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+div.cards {
+    background-color: white;
+    width: 70%;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+
+div.card {
+    background-color: aqua;
+    border: 1px solid black;
+    width: calc(90% /3);
+    height: 15rem;
+    margin: 1rem 1rem;
+
+}
+
+
+.card:first-child {
+    width: calc((94.5%/3)*2);
+
+}
+
+/* STRATEGIC PLAN */
+
+section.strategic-plan-container {
+    background-color: #9792e4;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+div.strategic-plan {
+    background-color: white;
+    width: 70%;
+    height: 550px;
+}
+
+div.plan-left {
+    background-color:green;
+    width: 50%;
+    height: 100%;
+
+}
+
+div.plan-right {
+    background-color: purple;
+    width: 50%;
+    height: 100%;
+
+}
+
+
+/* EXPERT PARTNERS */
+
+section.expert-container {
+    background-color: purple;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+div.expert {
+    background-color: blue;
+    width: 70%;
+    padding: 3.5rem;
+}
+
+div.title-expert {
+    background-color: white;
+    width: 100%;
+    height: 150px;
+}
+
+div.expert-name {
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    margin-top: 2rem;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 480px) {
+    section.top-cards-container {
+        background-color: white;
+    }
+
+    .card:first-child {
+        flex-direction: column;
+        height: 30rem;
+        width: 100%;
+    }
+
+    div.card {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    section.strategic-plan-container {
+        background-color: white;
+    }
+
+    div.strategic-plan {
+        flex-wrap: wrap;
+    }
+
+    div.plan-left {
+        width: 100%;
+    }
+
+    div.plan-right {
+        width: 100%;
+    }
+
+    div.title-expert {
+        width: 100%;
+    }
+
+    div.expert-name {
+        width: 100%;
+    }
+
+
+
+
+}
+
