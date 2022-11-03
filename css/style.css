@@ -239,16 +239,52 @@ div.expert {
 }
 
 div.title-expert {
-    background-color: red;
     width: 100%;
-    height: 150px;
+    text-align: center;
 }
 
+.title-expert span {
+    text-transform: uppercase;
+}
+
+.title-expert h2 {
+    color: #9792e4;
+    font-size: 2rem;
+    margin: 1rem;
+
+}
+
+
+
 div.expert-name {
-    background-color: red;
+    background-color: #9792e4;
+    border-radius: 3rem;
     width: 100%;
-    height: 150px;
     margin-top: 2rem;
+    align-items: center;
+}
+
+.expert-name img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 5rem;
+    overflow: hidden;
+    margin: 2rem 2rem;
+}
+
+.expert-name-right {
+    margin: 2rem;
+}
+
+.expert-name-right p {
+    color: white;
+    opacity: 70%;
+}
+
+.expert-name-right h3 {
+    color: white;
+    margin-top: 1rem;
+    text-transform: uppercase;
 }
 
 
@@ -387,9 +423,23 @@ footer {
         width: 100%;
     }
 
-    div.expert-name {
-        width: 100%;
+    .expert-name {
+        flex-wrap: wrap;
+        text-align: center;
     }
+
+    .expert-name img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-left: 3rem;
+    }
+    .expert-name-right {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+
 
     div.middle-card-h2 {
         width: 100%;
