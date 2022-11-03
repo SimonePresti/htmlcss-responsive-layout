@@ -42,6 +42,20 @@ div.h1-left {
     display: inline;
 }
 
+.h1-right ul li {
+    font-size: 0.8rem;
+    margin: 0 0.3rem;
+    color: white;
+}
+
+ul li:last-child {
+    background-color: white;
+    color: black;
+    font-size: large;
+    border-radius: 2.5rem;
+}
+
+
 
 /* TOP-CARDS-CONTAINER */
 
@@ -494,7 +508,19 @@ footer a {
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width:1000px) {
+    .h1-right span  {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+
+    .h1-right ul {
+        display: none;
+    }
 
     .card:first-child {
         width: calc(100%/1.7);
@@ -615,8 +641,9 @@ footer a {
 
 
 @media screen and (max-width: 480px) {
-    section.top-cards-container {
-        background-color: white;
+
+    .h1-right ul {
+        display: none;
     }
 
     .card:first-child {
@@ -635,6 +662,11 @@ footer a {
         margin-top: 1.5rem;
 
 
+    }
+
+    #phone {
+        padding: 0;
+        padding-right: 1.5rem;
     }
 
     section.strategic-plan-container {
