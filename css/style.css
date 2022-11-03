@@ -291,14 +291,13 @@ div.expert-name {
 /* MIDDLE-CARDS */
 
 section.middle-cards-container {
-    background-color: green;
+    background-color: #9792e4;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
 div.middle-cards {
-    background-color: blue;
     width: 70%;
     flex-wrap: wrap;
     align-items: center;
@@ -306,45 +305,115 @@ div.middle-cards {
 }
 
 div.middle-card-h2 {
-    background-color: yellow;
     width: 100%;
     height: 50px;
+    text-align: center;
+    margin: 2rem;
 }
 
 div.middle-card {
-    border: 1px solid black;
-    background-color: #9792e4;
+    background-color:white;
+    border-radius: 2rem;
     width: calc(90%/3);
-    height: 200px;
-    margin-left: 1rem;
+    margin: 1rem 1rem;
+    text-align: left;
+}
+
+div.middle-card-h2 h2 {
+    font-size: 2rem;
+    color: white;
+    margin: 0.5rem;
+}
+
+.middle-card span {
+    color: #9792e4;
+    font-size: 4rem;
+    margin: 1rem 1rem;
+}
+
+.middle-card h3 {
+    color: #9792e4;
+    margin: 1rem 1rem;
+}
+
+.middle-card p {
+    color: #617689;
+    margin:1rem 1rem;
+}
+
+.middle-card button {
+    background-color: #9792e4;
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    margin: 1rem 1rem;
+    width: 10rem;
+    height: 2.5rem;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 
 /* ABOUT US */
 
 section.about-us-container {
-    background-color: purple;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
 div.about-us {
-    background-color: white;
     width: 70%;
 }
 
 div.about-us-left {
-    background-color: lightcoral;
     width: 70%;
-    height: 500px;
 }
 
 div.about-us-right {
-    background-color: brown;
     width: 30%;
     height: 500px;
 }
+
+.about-us-left h2 {
+    color: #9792e4;
+    font-size: 3rem;
+    margin: 2rem 2rem;
+}
+
+.about-us-left p {
+    line-height: 2rem;
+    margin-bottom: 3rem;
+    margin: 2rem 2rem;
+}
+
+.about-us-right img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.about-us-right p {
+    color: #9792e4;
+    font-size: 1.6rem;
+    margin: 0 2rem;
+}
+
+.about-us-right button {
+    background-color: #9792e4;
+    border-radius: 3rem;
+    border: none;
+    color: white;
+    width: 12rem;
+    height: 3rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+
 
 /* FREE */
 
@@ -443,11 +512,13 @@ footer {
 
     div.middle-card-h2 {
         width: 100%;
+        margin-bottom: 8rem;
     }
 
     div.middle-card {
         width: 100%;
-        margin-top: 2rem;
+        margin: 0;
+        margin-bottom: 3rem;
     }
 
     div.about-us {
@@ -456,10 +527,21 @@ footer {
 
     div.about-us-left {
         width: 100%;
+        text-align: left;
     }
 
     div.about-us-right {
         width: 100%;
+    }
+
+    .about-us-left h2 {
+        margin: 0;
+        margin: 2rem 0;
+    }
+
+    .about-us-left p {
+        margin: 0;
+        margin-bottom: 2.5rem;
     }
 
 
